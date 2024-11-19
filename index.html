@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="./src/styles/main.css">
     <link rel="stylesheet" href="./src/styles/reset.css">
     <!-- LINKS CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- FONT -->
     <title>Piano</title>
 </head>
 <body>
@@ -13,29 +17,30 @@
         <header>  
             <h2>Digital Piano</h2>
             <div class="column volume-slider" >
-                <span>Volume</span> <input type="range">
+                <span>Volume</span> <input type="range" min="0" max="1" value="0.5" step="any">
             </div>
             <div class="column keys-check">
                 <span>Teclas</span> <input type="checkbox" checked>
             </div>
         </header>
         <ul class="piano-keys">
-            <li class="keys white"><span>a</span></li>
-            <li class="keys black"><span>w</span></li>
-            <li class="keys white">e<span>s</span></li>
-            <li class="keys black">d<span></span></li>
-            <li class="keys white">f<span></span></li>
-            <li class="keys black">t<span></span></li>
-            <li class="keys white">g<span></span></li>
-            <li class="keys black">y<span></span></li>
-            <li class="keys white">h<span></span></li>
-            <li class="keys black">u<span></span></li>
-            <li class="keys white">j<span></span></li>
-            <li class="keys black">k<span></span></li>
-            <li class="keys white">o<span></span></li>
-            <li class="keys black">l<span></span></li>
-            <li class="keys white">p<span></span></li>
-            <li class="keys black">;<span></span></li>
+            <li class="key white" data-key="a"><span>a</span></li>
+            <li class="key black" data-key="w"><span>w</span></li>
+            <li class="key white" data-key="s"><span>s</span></li>
+            <li class="key black" data-key="e"><span>e</span></li>
+            <li class="key white" data-key="d"><span>d</span></li>
+            <li class="key black" data-key="f"><span>f</span></li>
+            <li class="key white" data-key="t"><span>t</span></li>
+            <li class="key black" data-key="g"><span>g</span></li>
+            <li class="key white" data-key="y"><span>y</span></li>
+            <li class="key black" data-key="h"><span>h</span></li>
+            <li class="key white" data-key="u"><span>u</span></li>
+            <li class="key black" data-key="j"><span>j</span></li>
+            <li class="key white" data-key="k"><span>k</span></li>
+            <li class="key black" data-key="o"><span>o</span></li>
+            <li class="key white" data-key="l"><span>l</span></li>
+            <li class="key black" data-key="p"><span>p</span></li>
+            <li class="key white" data-key=";"><span>;</span></li>
         </ul>
     </div>
 
